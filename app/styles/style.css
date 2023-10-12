@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "InclusiveSans";
+    src: url('/app/fonts/InclusiveSans-Regular.woff2') format('woff2');
+    font-weight: normal; 
+    font-style: normal; 
+    font-family: 'InclusiveSans', sans-serif;
+  }
+
+*,*::before,*::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+    color: white;
+}
+
+footer { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    font-family: 'InclusiveSans';
+}
+footer img { 
+    width: 100px;
+    height: auto;
+
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 134px;
+    align-items: center;
+}
+
+/* main img { 
+    width: 200px;
+    height: auto;
+} */
+
+main input {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.60);
+    width: 100%;
+    height: auto;
+    background: transparent;
+    outline: none !important;
+    display: flex;
+    width: 37.375rem;
+    padding: 1rem;
+    align-items: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+main input::placeholder {
+    font-family: 'InclusiveSans', sans-serif;
+}
+
+main p {
+    font-family: 'InclusiveSans', sans-serif;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main .info { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-top: 0.5rem;
+}
+main .info img {
+    height: 12px;
+    width: 12px;
+}
+
+main button { 
+    background-color: #fff;
+    padding: 1rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.75rem;
+    background: #22B239;
+    border: none;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1.25rem;
+    color: white;
+    font-family: 'InclusiveSans';
+    transition: all ease 0.4s;
+}
+
+main button:hover {
+    box-shadow: 0px 0px 26px 0px #22B239;
+    transition: all ease 0.4s;
+    transform:scale(1.05);
+}
