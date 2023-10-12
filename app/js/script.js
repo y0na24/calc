@@ -1,7 +1,7 @@
 function calculateAverage() {
     const inputElement = document.getElementById('marks');
     const outputElement = document.getElementById('output');
-    const h2Elements = document.getElementsByTagName('h2'); // Получаем коллекцию элементов <h2>
+    const averageElement = document.getElementById('average');
   
     const inputNumbers = inputElement.value.trim().split(' ');
     let sum = 0;
@@ -17,10 +17,7 @@ function calculateAverage() {
   
     if (inputNumbers.length > 0) {
       const average = sum / inputNumbers.length;
-      for (let i = 0; i < h2Elements.length; i++) {
-        h2Elements[i].classList.remove("hidden");
-      }
-      
+        averageElement.classList.remove("hidden");
       outputElement.textContent = `${average.toFixed(2)}`;
     } else {
       outputElement.textContent = 'Введите допустимые числа.';
