@@ -17,8 +17,6 @@ function calculateAverage() {
   
     if (inputNumbers.length > 0) {
       const average = sum / inputNumbers.length;
-      
-      // Убираем класс "hidden" у каждого элемента <h2>
       for (let i = 0; i < h2Elements.length; i++) {
         h2Elements[i].classList.remove("hidden");
       }
